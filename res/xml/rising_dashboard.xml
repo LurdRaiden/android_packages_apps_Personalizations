@@ -17,19 +17,20 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/rising_settings_title" >
-            
-        <com.android.settingslib.widget.IllustrationPreference
-            android:key="personalizations_illustration"
-            android:order="-996"
-            app:lottie_rawRes="@raw/personalizations_illustration"/>
-            
-        <!-- About -->
+
+        <!-- Rising header -->
+        <Preference
+            android:key="raijin_logo"
+            android:selectable="false"
+            settings:layout="@layout/raijin_logo" />
+
+        <!--- UserInterface -->
         <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_settings_about"
-            android:title="@string/about_settings_title"
-            android:summary="@string/about_settings_summary"
-            android:fragment="com.rising.settings.fragments.About"
-            app:position="top" />
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/ui_title"
+            android:summary="@string/ui_settings_summary"
+            android:fragment="com.rising.settings.fragments.UserInterface"
+            app:position="top" /> 
 
       <!-- Lockscreen -->
         <com.rising.settings.preferences.AdaptivePreference
@@ -79,13 +80,13 @@
             android:summary="@string/sb_settings_summary"
             android:fragment="com.rising.settings.fragments.StatusBar"
             app:position="middle" />
- 
-        <!--- UserInterface -->
+
+        <!-- About -->
         <com.rising.settings.preferences.AdaptivePreference
-            android:icon="@drawable/ic_color_bucket"
-            android:title="@string/ui_title"
-            android:summary="@string/ui_settings_summary"
-            android:fragment="com.rising.settings.fragments.UserInterface"
-            app:position="bottom" /> 
+            android:icon="@drawable/ic_settings_about"
+            android:title="@string/about_settings_title"
+            android:summary="@string/about_settings_summary"
+            android:fragment="com.rising.settings.fragments.About"
+            app:position="bottom" />
 
 </PreferenceScreen> 

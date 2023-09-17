@@ -20,10 +20,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title" >
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="notification_illustration"
-        app:lottie_rawRes="@raw/notification_illustration" />
-
     <PreferenceCategory
         android:key="gen_notif_settings"
         android:title="@string/gen_notif_settings_title">

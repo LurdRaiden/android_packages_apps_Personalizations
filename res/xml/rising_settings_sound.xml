@@ -21,10 +21,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/sound_title" >
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="sound_illustration"
-        app:lottie_rawRes="@raw/sound_illustration" />
-
     <!-- Pulse music visualizer -->
     <com.rising.settings.preferences.AdaptivePreference
         android:key="pulse_settings"
